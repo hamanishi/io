@@ -1,0 +1,59 @@
+!!!
+%html{:lang => "ja", :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title @hamanishi
+    / toolbar color
+    %meta{:name => "theme-color", :content => "#002b6a"}/
+    %meta{:name => "msapplication-navbutton-color", :content => "#002b6a"}/
+    %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "#002b6a"}/
+    %link{:href => "./img/icon/favicon.ico", :rel => "shortcut icon"}/
+    /[if IE] <script type="text/javascript" src="excanvas.js"></script>
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "js/jquery-2.1.0.min.js"}
+    / Web fonts
+    %script{:src => "https://use.typekit.net/lsv0obc.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load({ async: true });}catch(e){}
+    %script{:charset => "utf-8", :src => "//typesquare.com/accessor/script/typesquare.js?nOnVDtbiSvc%3D", :type => "text/javascript"}
+    %script{:src => "js/main.js"}
+  %body
+    %section#top
+      %img{:src => "./animation.gif", :width => "30%" }
+      %img{:src => "./animation_mono.gif", :width => "30%"}
+      %img{:src => "./jphack_mono_fast.gif", :width => "30%"}
+
+    %section#background
+      .container
+        Interests
+        %ul
+          %li
+            Human Computer Interaction
+          %li
+            Augmented Human
+          %li
+            Computer Architecture, Cache Memory
+          %li
+            Cache Memory
+
+    %section#works
+      .container
+        Works
+        %ul
+          %li
+            iii Exhibition EXTRA2016 「Love Dream 歯ppiness」
+          %li
+            IVRC2016 Second Round Elimination 「歯ppiness」
+          %li
+            ISID IDEATHON First Prize 「歯ppiness Counter」
+          %li
+            JPHACK 2015 Soponsor Prize 「盲導犬++」
+          %li
+            「どこでもどろーん」One drone, Multi-Person
+          %li
+            「ぼくの島」Application of the islanders, by the islanders, for the islanders.
+
+    %section#footer
+      .contairner
+        #footer-copy
+          %p Copyright &copy; @hamanishi. All Rights Reserved.
