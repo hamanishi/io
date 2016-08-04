@@ -1,12 +1,13 @@
 !!!
 %html{:lang => "ja", :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"}
   %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
     %title @hamanishi
     / toolbar color
-    %meta{:name => "theme-color", :content => "#002b6a"}/
-    %meta{:name => "msapplication-navbutton-color", :content => "#002b6a"}/
-    %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "#002b6a"}/
+    %meta{:content => "#002b6a", :name => "theme-color"}/
+    %meta{:content => "#002b6a", :name => "msapplication-navbutton-color"}/
+    %meta{:content => "#002b6a", :name => "apple-mobile-web-app-status-bar-style"}/
     %link{:href => "./img/icon/favicon.ico", :rel => "shortcut icon"}/
     /[if IE] <script type="text/javascript" src="excanvas.js"></script>
     %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
@@ -19,10 +20,11 @@
     %script{:src => "js/main.js"}
   %body
     %section#top
-      %img{:src => "./animation.gif", :width => "30%" }
-      %img{:src => "./animation_mono.gif", :width => "30%"}
-      %img{:src => "./jphack_mono_fast.gif", :width => "30%"}
-
+      %img{:src => "./gif/animation.gif", :width => "30%"}/
+      %img{:src => "./gif/animation_mono.gif", :width => "30%"}/
+      %img{:src => "./gif/jphack_mono_fast.gif", :width => "30%"}/
+      %br/
+      %img{:src => "./img/drone.png", :width => "30%"}/
     %section#background
       .container
         Interests
@@ -33,13 +35,12 @@
             Augmented Human
           %li
             Computer Architecture, Cache Memory
-          %li
-            Cache Memory
-
     %section#works
       .container
         Works
         %ul
+          %li
+            Open Days and Student visits 2016, University of Tokyo 「Love Dream 歯ppiness」
           %li
             iii Exhibition EXTRA2016 「Love Dream 歯ppiness」
           %li
@@ -52,8 +53,7 @@
             「どこでもどろーん」One drone, Multi-Person
           %li
             「ぼくの島」Application of the islanders, by the islanders, for the islanders.
-
     %section#footer
       .contairner
         #footer-copy
-          %p Copyright &copy; @hamanishi. All Rights Reserved.
+          %p Copyright © @hamanishi. All Rights Reserved.
