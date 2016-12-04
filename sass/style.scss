@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  font-family: Futura,'Noto Sans JP',Trebuchet MS,Arial,sans-serif;
+  font-size: 100%;
+
+  .works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .work {
+      .image-jpg {
+      }
+      .image-gif {
+        display: none;
+      }
+      &:hover {
+
+        .image-jpg {
+          display: none;
+        }
+        .image-gif {
+          display: inline;
+        }
+
+        filter: none;
+        animatino: flash 1.5s;
+        -webkit-animation: flash 1.5s;
+        @-webkit-keyframes flash {
+          0% {
+            opacity: .4;
+            filter: none;
+          }
+          100% {
+            filter: none;
+          }
+        }
+
+        @keyframes flash {
+          0% {
+            opacity: .4;
+            filter: none;
+          }
+          100% {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+}
