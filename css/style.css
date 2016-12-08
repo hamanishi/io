@@ -12,17 +12,26 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    body .works .work .image-gif {
-      display: none; }
-    body .works .work:hover {
-      -webkit-filter: none;
-              filter: none;
-      animatino: flash 1.5s;
-      -webkit-animation: flash 1.5s; }
-      body .works .work:hover .image-jpg {
-        display: none; }
-      body .works .work:hover .image-gif {
-        display: inline; }
+    body .works .work {
+      overflow: hidden;
+      width: 200px;
+      height: 200px; }
+      body .works .work .image-jpg {
+        width: 200px;
+        height: 200px; }
+      body .works .work .image-gif {
+        display: none;
+        width: 200px;
+        height: 200px; }
+      body .works .work:hover {
+        -webkit-filter: none;
+                filter: none;
+        animatino: flash 1.5s;
+        -webkit-animation: flash 1.5s; }
+        body .works .work:hover .image-jpg {
+          display: none; }
+        body .works .work:hover .image-gif {
+          display: inline; }
 
 @-webkit-keyframes flash {
   0% {
