@@ -1,14 +1,14 @@
-var gulp = require("gulp");
-var haml = require("gulp-ruby-haml");
-var sass = require("gulp-sass");
-var autoprefixer = require("gulp-autoprefixer");
-var uglify = require("gulp-uglify");
-var browser = require("browser-sync");
-var plumber = require("gulp-plumber");
-var babel = require("gulp-babel");
-var open = require("gulp-open");
+const gulp = require("gulp");
+const haml = require("gulp-ruby-haml");
+const sass = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
+const uglify = require("gulp-uglify");
+const browser = require("browser-sync");
+const plumber = require("gulp-plumber");
+const babel = require("gulp-babel");
+const open = require("gulp-open");
 
-gulp.task("server", function() {
+gulp.task("server", () => {
     browser({
         server: {
             baseDir: "./"
@@ -17,14 +17,14 @@ gulp.task("server", function() {
     });
 });
 
-gulp.task("haml", function() {
+gulp.task("haml", () => {
     gulp.src("haml/**/*haml")
         .pipe(haml())
         .pipe(gulp.dest("./"))
         .pipe(browser.reload({stream:true}));
 });
 
-gulp.task("sass", function() {
+gulp.task("sass", () => {
     gulp.src("sass/**/*scss")
         .pipe(plumber())
         .pipe(sass())
@@ -33,7 +33,7 @@ gulp.task("sass", function() {
         .pipe(browser.reload({stream:true}));
 });
 
-gulp.task("default", ["server"], function() {
+gulp.task("default", ["server"], () => {
     gulp.watch(["sass/**/*.scss"],["sass"]);
     gulp.watch(["haml/**/*.haml"],["haml"]);
 });
