@@ -1,0 +1,89 @@
+!!!
+%html{:lang => "ja", :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title jp@hamanishi
+    / toolbar color
+    %meta{:content => "#002b6a", :name => "theme-color"}/
+    %meta{:content => "#002b6a", :name => "msapplication-navbutton-color"}/
+    %meta{:content => "#002b6a", :name => "apple-mobile-web-app-status-bar-style"}/
+    %link{:href => "./img/icon/favicon.ico", :rel => "shortcut icon"}/
+    /[if IE] <script type="text/javascript" src="excanvas.js"></script>
+    %link{:href => "../css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    -# %script{:src => "js/jquery-2.1.0.min.js"}
+    / Web fonts
+    %script{:src => "https://use.typekit.net/lsv0obc.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load({ async: true });}catch(e){}
+    %script{:charset => "utf-8", :src => "//typesquare.com/accessor/script/typesquare.js?nOnVDtbiSvc%3D", :type => "text/javascript"}
+  %body
+    %div.language
+      %a{:href => "../"}<>
+        en
+      \/JP
+    %section#top
+      %div.works
+        %div.work
+          %img.image-jpg{:src => "../img/tmp.png"}/
+          %img.image-gif{:src => "../gif/animation_mono.gif"}/
+        %div.work
+          %img.image-jpg{:src => "../img/tmp.png"}/
+          %img.image-gif{:src => "../gif/jphack_mono_fast.gif"}/
+          -# %br/
+          -# %img{:src => "../gif/dokodemo_crash.gif"}/
+          %br/
+        %div.work
+          %img.image-jpg{:src => "../img/tmp.png"}/
+          %img.image-gif{:src => "../gif/dokodemo_crash_mono.gif"}/
+        %div.work
+          %img.image-jpg{:src => "../img/tmp.png"}/
+          %img.image-gif{:src => "../gif/dokodemo_all.gif"}/
+          %br/
+        %div.work
+          %img.image-jpg{:src => "../img/happiness_system-01.png"}/
+          %img.image-gif{:src => "../gif/dokodemo_all.gif"}/
+
+        -# %img{:src => "./gif/animation.gif", :width => "30%"}/
+    %section#background
+      .container
+        日本語−
+        %ul
+          %li
+            Human Computer Interaction
+    %section#works
+      .container
+        Works
+        %ul
+          %li
+            iii Exhibition "FAKE FUTURE" 「Marionette Future｣
+            %a{:href => "http://iiiexhibition.com/"}Web
+          %li
+            IVRC2016 1st round (20 of about 100 teams) 「歯ppiness」: Feel the virtual Mouth inside of the mouth by using the mouth.
+          %li
+            Open Days and Student visits 2016, University of Tokyo 「Love Dream 歯ppiness」
+          %li
+            iii Exhibition EXTRA2016 「Love Dream 歯ppiness」
+            %a{:href => "http://www.iiiexhibition.com/log/iiiEx2016/"}Web
+          %li
+            IVRC2016 Second Round Elimination 「歯ppiness」
+          %li
+            ISID IDEATHON First Prize 「歯ppiness Counter」
+          %li
+            JPHACK 2015 Soponsor Prize 「盲導犬++」
+          %li
+            「どこでもどろーん」One drone, Multi-Person
+          %li
+            「ぼくの島」Application of the islanders, by the islanders, for the islanders.
+
+    %section#about
+      .container
+        About
+        %ul
+          %li
+            %a{:href => "https://www.linkedin.com/in/natsuki-hamanishi-5950a4123?trk=nav_responsive_tab_profile"}LinkedIn
+
+    %section#footer
+      .contairner
+        #footer-copy
+          %p Copyright © @hamanishi. All Rights Reserved.
