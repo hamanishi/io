@@ -1,0 +1,13 @@
+{
+  "name": "hamanishi.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hamanishi/hamanishi.github.io.git",
+  "author": "Natsuki Hamanishi <hamanishinatsukilab@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "watch": "parcel index.html --no-hmr --open"
+  }
+}
