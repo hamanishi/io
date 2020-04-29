@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --out-dir docs",
-    "buildp": "parcel build index.html --public-url io --out-dir docs",
+    "buildp": "parcel build index.html --public-url ./ --out-dir docs",
     "watch": "parcel index.html --no-hmr --open"
   },
   "devDependencies": {
