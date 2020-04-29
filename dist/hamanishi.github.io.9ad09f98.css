@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #000000;
+  margin: 5%;
+  line-height: 1.6;
+}
+
+body a {
+  color: #FF0066;
+}
+
+h1 {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: xx-large;
+  color: #FFFFFF;
+}
+
+div.section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+div.section-body a:hover {
+  text-decoration: none;
+}
+
+div#link {
+  position: fixed;
+  _position: absolute;
+  bottom: 15%;
+  color: #55FF55;
+}
+
+div#info {
+  position: fixed;
+  _position: absolute;
+  bottom: 10%;
+  color: #55FF55;
+}
+
+div#footer {
+  position: fixed;
+  _position: absolute;
+  bottom: 5%;
+  color: #55FF55;
+}
+
+/*# sourceMappingURL=/hamanishi.github.io.9ad09f98.css.map */
